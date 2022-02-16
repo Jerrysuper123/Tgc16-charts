@@ -1,0 +1,12 @@
+#container {
+  display: flex;
+}
+
+/* body {
+  background-color: red;
+} */
+
+.chart {
+  flex-basis: 100%;
+  flex: 1;
+}

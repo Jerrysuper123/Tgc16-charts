@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- chart must have a height to display it -->
+    <div id="container">
+        <div style="height:80vh" class="chart">
+            <div id="line-chart"></div>
+            <!-- <div id="bar-chart" style="height:80vh"></div> -->
+        </div>
+
+        <div style="height:80vh" class="chart">
+            <!-- <div id="line-chart" style="height:80vh"></div> -->
+            <div id="bar-chart"></div>
+        </div>
+
+    </div>
+
+
+    <!-- once this is  -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- this comes before chart js, sighting and temp will be in global scope, so other js will use it -->
+    <script src="data.js"></script>
+    <!-- variables is accessed in cascading style, line chart can access data.js, nut not bar-chart below -->
+    <script src="line-chart.js"></script>
+    <script src="bar-chart.js"></script>
+</body>
+
+</html>
