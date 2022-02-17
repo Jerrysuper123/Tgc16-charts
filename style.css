@@ -1,0 +1,23 @@
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+}
+
+/* .box:hover {
+  width: 200px;
+  transition: width 2s linear;
+} */
+
+.stretch {
+  /* ease in - slowly start and then grow faster */
+  transition: width 2s linear, height 2s linear, background-Color 3s linear;
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+
+.expand {
+  transition: height 0.5s;
+  height: 600px;
+}
